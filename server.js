@@ -6,16 +6,18 @@ const express = require("express");
 const app = express();
 const passport = require ('passport')
 const connectDB = require("./config/connectDB");
-const { userRegister } = require("./controllers/user.controller");
-const User = require("./models/User");
+//const { userRegister } = require("./controllers/user.controller");
+//const User = require("./models/User");
 const user = require("./routes/user");
-
+const job = require("./routes/job");
 connectDB();
 
 // Parse date
 app.use(express.json());
 app.use(passport.initialize())
-app.use('/api',user);
+app.use('/api/user',user);
+app.use("/api/job", job);
+
 
 app.listen(process.env.PORT, (err) => {
     console.log(process.env.PORT)
