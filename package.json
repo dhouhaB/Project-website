@@ -4,7 +4,8 @@
   "description": "site de recherche d'emploi ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently  \"  nodemon server  \"   \" cd client && npm start   \"  "
   },
   "author": "Dhouha Bessalah",
   "license": "ISC",
