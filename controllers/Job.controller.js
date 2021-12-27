@@ -1,40 +1,21 @@
 const Job = require("../models/Job");
 
+exports.JobAdding = async (req, res) => {
+  const newJob = new Job({ ...req.body });
+  const reference = newJob.reference;
+  const job = await Job.findOne({ reference });
 
+  if (job) {
+    return res.status(401).json({ msg: "user already exist" });
+  }
 
-
-    exports.JobAdding  = async (req, res) => {
-
-
-
-        const newJob = new Job({ ...req.body });
-       const reference = newJob.reference;
-        const job = await Job.findOne({ reference});
-      
-       if (job) {
-         return res.status(401).json({ msg: "user already exist" });
-        }
-      
-       
-     
-      
-      try {
-
-      
- 
-      
-      
-          await newJob.save();
-          res.status(202).json({ msg: "Register success" });
-        } catch (err) {
-          res.status(402).json({ msg: "Register failed" });
-        }
-      };
-
-
-
-
-
+  try {
+    await newJob.save();
+    res.status(202).json({ msg: "Register success" });
+  } catch (err) {
+    res.status(402).json({ msg: "Register failed" });
+  }
+};
 
 exports.editJob = async (req, res) => {
   let { _id } = req.params;
@@ -61,9 +42,9 @@ exports.getJob = async (req, res) => {
   const jobs = await Job.find();
 
   try {
-    res.status(202).json({jobs});
+    res.status(202).json({ jobs });
   } catch (error) {
     console.log("get Job add failed", error);
-    res.status(402).json({msg: "Fetch job add failed"});
+    res.status(402).json({ msg: "Fetch job add failed" });
   }
 };

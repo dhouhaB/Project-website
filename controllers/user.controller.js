@@ -96,3 +96,15 @@ exports.getUsers = async (req, res) => {
     res.status(402).json({msg: "Fetch users failed"});
   }
 };
+exports.getUserById = async (req, res) => {
+  const { _id } = req.params;
+  const user = await User.findById(_id).populate("posts")
+
+  try {
+    await
+    res.status(201).json({ msg : "Get user success", user});
+  } catch (error) {
+    console.log(error);
+    res.status(401).json({msg: "Get user failed"});
+  }
+};

@@ -20,9 +20,12 @@ const userSchema = new mongoose.Schema({
       enum : ["user", "admin"],
       default : "user",
   },
-    
+  posts:[{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Post"
+}],
 
 
     
   });
-  module.exports = User = mongoose.model("user", userSchema);
+  module.exports = mongoose.model("User", userSchema);
