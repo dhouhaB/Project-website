@@ -12,10 +12,14 @@ const user = require("./routes/user");
 const admin =require ("./routes/admin")
 const job = require("./routes/job");
 const posts = require("./routes/posts");
+const cors = require("cors");
 
 connectDB();
 
-// Parse date
+app.use(cors({
+origin: '*'
+}));
+/// Parse date
 app.use(express.json());
 app.use(passport.initialize())
 app.use('/api/user',user);

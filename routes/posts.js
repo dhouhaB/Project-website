@@ -9,4 +9,4 @@ Router.get("/getPost", getPost );
 Router.put("/:_id", editPost);
 Router.delete("/:_id", deletePost);
 
-module.exports = Router;
+module.exports = Router

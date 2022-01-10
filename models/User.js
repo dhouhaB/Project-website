@@ -4,13 +4,16 @@ const userSchema = new mongoose.Schema({
       type: String,
     },
   
+
+  adress: {
+      type: String,
+    },
+
     email: {
       type: String,
     },
   
-    adress: {
-      type: String,
-    },
+   
   
     password: {
       type: String,

@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	background: #F4F5FA;
+}
+
+.content{
+	padding: 70px 10%;
+}
+
+.content h2{
+	font-size: 35px;
+	text-align: center;
+	color: #333;
+	margin: 0;
+}
+
+.content .title{
+	font-size: 18px;
+	text-align: center;
+	color: #888;
+}
+
+.content .card .title{
+	color: #333;
+	font-weight: 500;
+}
+
+.content .text{
+	font-size: 16px;
+	text-align: center;
+	color: #888;
+}
+
+.content i{
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	color: #0099FF;
+}
+
+.content .flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.content .card{
+	background: #FFF;
+	width: 280px;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 20px;
+	box-shadow: 5px 10px 20px rgba(0,0,0,.1);
+	border-bottom: 5px solid #0099FF;
+}
