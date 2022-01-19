@@ -52,8 +52,7 @@ const data=[
         id:Math.random(),
       photo:"https://meetanentrepreneur.lu/wp-content/uploads/2019/08/profil-linkedin.jpg",
       title:"Chargés Clientèle",
-      description:"une société offshore en pleine croissance qui gère et exploite une plateforme multinationale de réservation de taxis, recrute des chargés clientèles (H/F) pour ses trois équipes.",
-  
+      description:"<p>une société offshore en pleine croissance qui gère et exploite une plateforme multinationale de réservation de taxis, recrute des chargés clientèles (H/F) pour ses trois équipes",
       Filed:"Call Center",
       adress:"Tunis" 
       },

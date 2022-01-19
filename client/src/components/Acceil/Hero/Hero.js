@@ -1,9 +1,12 @@
-import React from 'react'
+
 import {AiOutlineSearch} from 'react-icons/ai'
+import React ,{useState}from "react";
 
 import './Hero.css'
 
 const Hero = () => {
+    const [filterByName, setFilterByName] = useState("");
+
     return (
         <div className='hero'>
             <div className='content'>
@@ -12,7 +15,8 @@ const Hero = () => {
                 <form className='search'>
 
                     <div>
-                        <input type='text' placeholder='Enter Keyword..' />
+                        <input type='text' placeholder='Enter Keyword..'           onChange={(e) => setFilterByName(e.target.value) }
+/>
                     </div>
                    
                 </form>

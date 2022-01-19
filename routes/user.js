@@ -9,6 +9,7 @@ Router.put("/:_id", editUser);
 Router.get("/currentUser", isAuth(), (req, res) => res.send(req.user));
 Router.delete("/:_id", deleteUser);
 Router.get('/getUserById/:_id',isAuth(), getUserById);
+Router.delete("/:_id", deleteUser);
 
 Router.get("/users", getUsers);
 

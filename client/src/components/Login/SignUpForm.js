@@ -5,11 +5,12 @@ import { Link, useHistory } from "react-router-dom";
 
 
 
-
+import Navbar from '../Navbar/Navbar';
 
 
 
 import './up.css'
+import Footer from '../Acceil/Footer/Footer';
 
 const SignUpForm = () => {
   const history = useHistory();
@@ -54,8 +55,10 @@ setEmail ("");
 };
 
     return (
+      <>
+      <Navbar/>
      
-                <div class="container">
+                <div class="container-signup">
       <div className='part1'>
     <div class="wrapper">
       <div class="title"><span>Create  account </span></div>
@@ -93,8 +96,8 @@ setEmail ("");
 </div>
 </div>
 
-
-
+<Footer></Footer>
+</>
 
 
 

@@ -21,9 +21,10 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color:lightslategray;
+	background: #5651e5;
+
     padding: 70px 0;
-	height:300px;
+	height:200px;
 }
 .footer-col{
    width: 25%;

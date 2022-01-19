@@ -26,6 +26,7 @@
   }
  .ddd {
     padding-left: 600px;
+    margin-top: -10px;
    
   }
   
@@ -35,6 +36,7 @@
     justify-content: space-between;
     margin: 4rem auto;
     max-width: 90%;
+    
 
  
   }
@@ -50,7 +52,16 @@
     transition: all 100ms ease-in-out;
     background: url('../../assets/bac7.jpg') no-repeat center center/cover;
 
-  }
+   /*
+      overflow-y: scroll;
+      scrollbar-color: rebeccapurple green;
+      scrollbar-width: thin;*/
+    }
+
+
+
+
+
   
   .dictionary > .term > dt {
     margin-bottom: 1rem;
@@ -110,6 +121,11 @@
     margin-top:30px;
     width:80px;
     height: 40px;
-    background-color: #5651e5;
-    border: 0;
+    /*background: url('../../assets/bac34.jpg') no-repeat center center/cover;*/
+    background-color:lightgrey;
+    border:0px;
   }
+  
+#SettingScrole {
+  overflow: scroll;
+}

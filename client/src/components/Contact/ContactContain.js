@@ -5,7 +5,7 @@ const ContactContain = () => {
         
 
 
-<div class="container">
+<div class="container-contact">
 		<div class="contact-box">
 			<div class="left"></div>
 			<div class="right">
@@ -14,7 +14,7 @@ const ContactContain = () => {
 				<input type="text" class="field" placeholder="Your Email"/>
 				<input type="text" class="field" placeholder="Phone"/>
 				<textarea placeholder="Message" class="field"></textarea>
-				<button class="btn">Send</button>
+				<button class="btnn">Send</button>
 			</div>
 		</div>
 	</div>

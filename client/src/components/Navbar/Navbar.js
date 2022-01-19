@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import {BsFillHouseFill} from 'react-icons/bs'
+import { Link, Redirect} from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import './Navbar.css'
 
@@ -9,17 +11,32 @@ const Navbar = () => {
 
     const[click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
+    const isAuth = useSelector((state) => state.userReducer.isAuth);
 
     return (
         <div className='navbar-navbar'>
             <div className='container-navbar'>
                 <h1><span><BsFillHouseFill />Jo</span>bs</h1>
-                <button id="btt" className='btn'  >Sign In</button>
+             
+                <Link to="/login-page" className="link">
+                <button id="btt" className='btn'  >{isAuth ? "My Profil" : "Sign In"}</button>                        </Link>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li><a href='#'>Home</a></li>
               
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Contact</a></li>
+   <Link to="/Home" className="link">
+                    <li><a href='#'>Home</a></li>
+                        </Link>
+
+
+   
+
+
+
+                    
+                        <Link to="/contact-page" className="link">
+                        <li><a href='#'>Contact</a></li>
+                        </Link>
+
+
                 </ul>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}

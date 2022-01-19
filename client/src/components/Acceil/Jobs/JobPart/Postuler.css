@@ -1,0 +1,41 @@
+
+.containerPostuler
+
+{
+    margin-top: 150px;
+    width :100%;
+    height:400px;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.design-postuler
+{
+    width:40%;
+    height:70%;
+    margin-left: 80px;
+    margin-right: 10px;
+    background-color: cadetblue;
+}
+.imgPostuler
+{
+    background-color: pink;
+    width: 40%;
+}
+.formpostuler
+{
+    font-weight: bolder;
+    color: darkcyan;
+}
+#post1
+{
+    margin-bottom: 30px;
+}
+#post2
+{
+    margin-bottom: 30px;
+}

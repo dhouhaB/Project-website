@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './JobPart.css';
 
@@ -22,6 +22,7 @@ import data from './data';
 
 
   function createJobCard(datas) {
+   
     return (
         
       <JobCard
@@ -45,16 +46,33 @@ import data from './data';
 
 
 
-const JobPart = () => {
+const JobPart = (filterByName) => {
+
+
     return (
         <div className='jobpartdesign'>
         <h1>
-          <span className='ddd'>Offers</span>
+          {/* <span className='ddd'>Offers</span>*/}
         </h1>
        
+      
+<dl id="SettingScrole" className="dictionary">{data.map(createJobCard)}</dl>
+ 
+        
 
-        <dl className="dictionary">{data.map(createJobCard)}</dl>
-        <button className='btn2'>Postuler</button>
+
+
+
+
+
+
+
+
+
+
+
+
+        
       </div>
     )
 }

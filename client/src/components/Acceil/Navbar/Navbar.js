@@ -19,6 +19,9 @@ const Navbar = () => {
                     <li><a href='#'>Home</a></li>
              
                     <li><a href='#'>About</a></li>
+                    <Link to="/contact-page" className="link">
+                    <li><a href='#'>Contact</a></li>
+                        </Link>
                     <li><a href='#'>Contact</a></li>
                 </ul>
                 <div className='hamburger' onClick={handleClick}>
