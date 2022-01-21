@@ -34,12 +34,14 @@ const Navbar2 = () => {
 
 
 
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <ul id="ddddul" className={click ? 'nav-menu active' : 'nav-menu'}>
                 <Link to="/Home" className="link">
                 <li><a href='#'>Home</a></li></Link>
 
                     <li><a href='#'>About</a></li>
+                    <Link to="/contact-page" className="link">
                     <li><a href='#'>Contact</a></li>
+                        </Link>
                 </ul>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}
@@ -55,11 +57,14 @@ const Navbar2 = () => {
             <div className='container-navbar'>
                 <h1><span><BsFillHouseFill />Jo</span>bs</h1>
                 <button id="btt" className='btn'  >Sign up</button>
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li><a href='#'>Home</a></li>
+                <ul id="dddul" className={click ? 'nav-menu active' : 'nav-menu'}>
+                <Link to="/Home" className="link">
+                <li><a href='#'>Home</a></li></Link>
               
                     <li><a href='#'>About</a></li>
+                    <Link to="/contact-page" className="link">
                     <li><a href='#'>Contact</a></li>
+                        </Link>
                 </ul>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}
@@ -78,28 +83,6 @@ const Navbar2 = () => {
         )}
         </>
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-
-
-
-
-
-
-
    
    )
 

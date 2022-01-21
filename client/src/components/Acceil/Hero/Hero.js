@@ -12,14 +12,14 @@ const Hero = () => {
             <div className='content'>
                 <h1>Find your future Job</h1>
                 <p className='search-text'>Your Dreamm Job is waiting </p>
-                <form className='search'>
+                {/* <form className='search'>
 
                     <div>
-                        <input type='text' placeholder='Enter Keyword..'           onChange={(e) => setFilterByName(e.target.value) }
-/>
+                    
+                       <input type='text' placeholder='Enter Keyword..'           onChange={(e) => setFilterByName(e.target.value) }/>
                     </div>
                    
-                </form>
+                </form> */}
             </div>
         </div>
     )

@@ -17,10 +17,14 @@ const Navbar = () => {
         <div className='navbar-navbar'>
             <div className='container-navbar'>
                 <h1><span><BsFillHouseFill />Jo</span>bs</h1>
-             
-                <Link to="/login-page" className="link">
-                <button id="btt" className='btn'  >{isAuth ? "My Profil" : "Sign In"}</button>                        </Link>
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+
+                {!isAuth && <Link to="/login-page" className="link">
+                <button id="btt" className='btn'  >Sign In</button> </Link>}
+                {isAuth && <Link to="/profile-page" className="link">
+                <button id="btt" className='btn'  >My Profil</button> </Link>}
+                {/* <Link to="/login-page" className="link">
+                <button id="btt" className='btn'  >{isAuth ? "My Profil" : "Sign In"}</button> </Link> */}
+                <ul id="ddul" className={click ? 'nav-menu active' : 'nav-menu'}>
               
    <Link to="/Home" className="link">
                     <li><a href='#'>Home</a></li>

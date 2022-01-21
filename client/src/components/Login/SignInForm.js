@@ -20,12 +20,12 @@ const SignInForm = () => {
         password,
       })
     );
-    alert("done")
+    
   };
  
 
   return isAuth ? (
-    <Redirect to="/profile-page" />
+    <Redirect to="/" />
   ):(
   
 <>

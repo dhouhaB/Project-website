@@ -17,6 +17,7 @@ import { getProfile } from "./components/JS/actions/userActions";
 import React, { useEffect } from "react";
 import Contactmain from './components/Contact/Contactmain';
 import Postuele from './components/Acceil/Jobs/JobPart/Postuele'
+import Jobpartt from './components/Acceil/Jobs/JobPart/Jobpartt';
 
 
 
@@ -88,7 +89,9 @@ const App = () => {
           </Route>
 
       
-
+          <Route path="/joby" exact>
+          <Jobpartt/>
+          </Route>
 
 
 

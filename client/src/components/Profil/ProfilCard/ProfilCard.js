@@ -14,6 +14,7 @@ const ProfilCard = ({user}) => {
     const [name,setName] = useState();
     const [address,setAddress] = useState();
     const [password,setPassword] = useState();
+    const [redirectNow,setRedirectNow] = useState(true);
     const [userInfo,setUserInfo] = useState({
         fullName : user.fullName,
         adress : user.adress
@@ -36,22 +37,22 @@ const ProfilCard = ({user}) => {
     const result = window.confirm("voulez vous supprimer ce compte ")
     if (result)
     {
+     
+        setRedirectNow(false)
+        dispatch(logOut())
         dispatch(deleteUser(user._id))
         alert("user supprimé avec succés");
-        dispatch(logOut());
-        <Redirect to="/" />
+    
     }
     
 }
-
-
 
 
     return (
       
         <div>
             
-	<div class="card-container">
+	{redirectNow ? <div class="card-container">
 
 <div class="upper-container">
     <div className="image-container">
@@ -86,7 +87,7 @@ const ProfilCard = ({user}) => {
 
 </div>
 
-</div>
+</div> : <Redirect to="/" />}
         </div>
     )
 }

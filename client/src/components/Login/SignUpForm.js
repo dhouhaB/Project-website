@@ -78,7 +78,7 @@ setEmail ("");
         </div>
         <div class="row">
           <i class="fas fa-lock"></i>
-          <input type="password" placeholder="Password" value ={password} required onChange={(e)=>setPassword(e.target.value)}  />
+          <input type="password" placeholder="Password"  minlength="8"  value ={password} required onChange={(e)=>setPassword(e.target.value)}  />
         </div>
         <div class="row button">
           <input type="submit" value="Register"   onClick={() => addUser()} />

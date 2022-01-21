@@ -61,6 +61,7 @@ exports.userLogin = async (req, res) => {
     const token = await jwt.sign(payload, process.env.secretOrPrivateKey);
 
     res.status(200).json({ token: `Bearer ${token}` });
+    res.redirect("/")
   } catch (err) {
     res.status(400).json({ errors: err });
   }

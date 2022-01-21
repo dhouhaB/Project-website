@@ -4,11 +4,12 @@ import Hero from '../Acceil/Hero/Hero';
 import JobPart from '../Acceil/Jobs/JobPart/JobPart';
 import Footer from '../Acceil/Footer/Footer';
 import Aboutus from '../About us/Aboutus';
+import Navbar2 from '../Navbar/NavBar2';
 
 const Home = () => {
     return (
         <div>
-        <Navbar/>
+        <Navbar />
         <Hero/>
         <Aboutus/>
         <JobPart/>

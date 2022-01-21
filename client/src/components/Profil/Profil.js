@@ -5,12 +5,13 @@ import { useSelector } from "react-redux";
 import userReducer from "../JS/reducers/userReducer";
 
 
+
 const Profil = () => {
     const user = useSelector((state) => state.userReducer.user);
 
     return (
         <div>
-            <Navbar2/>
+     <Navbar2/>
 
 <ProfilCard  user={user} />
 

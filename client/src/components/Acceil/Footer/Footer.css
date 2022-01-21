@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
+/*body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
@@ -9,22 +9,35 @@ body{
 	box-sizing: border-box;
 }
 .container-footer{
-	max-width: 1170px;
+	max-width: 1070px;
 	margin:auto;
 	
-}
-.row{
+}*/
+
+.row
+{
+
+
 	display: flex;
 	flex-wrap: wrap;
 }
-ul{
+#rowfix
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ulfooter{
 	list-style: none;
 }
 .footer{
 	background: #5651e5;
+ 
+
 
     padding: 70px 0;
 	height:200px;
+	
 }
 .footer-col{
    width: 25%;
@@ -43,7 +56,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #5651e5;
+	/*background-color: #5651e5;*/
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -60,6 +73,18 @@ ul{
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
+	
+}
+.namep
+{
+	padding-left: 550px;
+
+
+	bottom: -10px;
+	background-color: #5651e5;
+	height: 2px;
+	box-sizing: border-box;
+	
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
